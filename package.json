@@ -1,0 +1,8 @@
+{
+	"name": "logger",
+	"version": "0.0.0",
+	"dependencies": {
+		"node-syslog": "1.1.6"
+	},
+	"main": "logger.js"
+}
