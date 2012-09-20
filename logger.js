@@ -7,23 +7,24 @@ if ( process.argv.indexOf( "--console" ) !== -1 ) {
 	return;
 }
 
-var syslog = require( "node-syslog" );
+var format = require( "util" ).format,
+	syslog = require( "node-syslog" );
 
 module.exports = {
 	init: function( name ) {
 		syslog.init( name, syslog.LOG_PID, syslog.LOG_LOCAL0 );
 
 		return {
-			log: function( msg ) {
-				syslog.log( syslog.LOG_INFO, msg );
+			log: function() {
+				syslog.log( syslog.LOG_INFO, format.apply( null, arguments ) );
 			},
 
-			warn: function( msg ) {
-				syslog.log( syslog.LOG_NOTICE, msg );
+			warn: function() {
+				syslog.log( syslog.LOG_NOTICE, format.apply( null, arguments ) );
 			},
 
-			error: function( msg ) {
-				syslog.log( syslog.LOG_ERR, msg );
+			error: function() {
+				syslog.log( syslog.LOG_ERR, format.apply( null, arguments ) );
 			}
 		};
 	}
