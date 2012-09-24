@@ -1,4 +1,4 @@
-# node-logger
+# simple-log
 
 A simple logger for node.js, which logs to syslog using the popular console API.
 
@@ -11,7 +11,7 @@ npm install simple-log
 ## Usage
 
 ```js
-var logger = require( "logger" ).init( "appname" );
+var logger = require( "simple-log" ).init( "appname" );
 logger.log( "hello" );
 ```
 
