@@ -1,15 +1,12 @@
 # node-logger
 
-A simple logger for node.js.
+A simple logger for node.js, which logs to syslog using the popular console API.
 
 ## Installation
 
 ```sh
-npm install git://github.com/jquery/node-logger.git
+npm install simple-log
 ```
-
-*Note: This module is very basic and is only intended to standardize logging
-within jQuery projects, so this is not versioned or published on npm.*
 
 ## Usage
 
@@ -29,3 +26,5 @@ The logger supports three methods:
 * `logger.log( msg )`
 * `logger.warn( msg )`
 * `logger.error( msg )`
+
+Each method supports the full `console.log()`/`util.format()` API.
