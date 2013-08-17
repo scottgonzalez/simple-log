@@ -2,6 +2,8 @@
 
 A simple logger for node.js, which logs to syslog using the popular console API.
 
+Support this project by [donating on Gittip](https://www.gittip.com/scottgonzalez/).
+
 ## Installation
 
 ```sh
@@ -28,3 +30,7 @@ The logger supports three methods:
 * `logger.error( msg )`
 
 Each method supports the full `console.log()`/`util.format()` API.
+
+---
+
+Support this project by [donating on Gittip](https://www.gittip.com/scottgonzalez/).
