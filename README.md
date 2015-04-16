@@ -31,6 +31,10 @@ The logger supports three methods:
 
 Each method supports the full `console.log()`/`util.format()` API.
 
+## License
+
+Copyright Scott González. Released under the terms of the MIT license.
+
 ---
 
 Support this project by [donating on Gittip](https://www.gittip.com/scottgonzalez/).
