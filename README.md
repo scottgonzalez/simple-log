@@ -17,9 +17,7 @@ var logger = require( "simple-log" ).init( "appname" );
 logger.log( "hello" );
 ```
 
-The logger will log to syslog by default. If the main script is executed with
-`--console` then the logger will log to the console, allowing for easier
-testing during development.
+The logger will log to syslog by default. If the main script is executed with `--console` then the logger will log to the console, allowing for easier testing during development.
 
 ## API
 
