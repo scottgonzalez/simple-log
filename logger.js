@@ -8,7 +8,7 @@ if ( process.argv.indexOf( "--console" ) !== -1 ) {
 }
 
 var format = require( "util" ).format,
-	syslog = require( "node-syslog" );
+	syslog = require( "modern-syslog" );
 
 module.exports = {
 	init: function( name ) {
